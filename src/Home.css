@@ -18,7 +18,21 @@ body{
   max-width: 1300px;
   width: 100%;
   margin: auto;
+  margin-top: 10px;
   padding: 0px 20px;
+}
+
+.logo{
+ background-color: #0F2033;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.logo img{
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 section{
@@ -29,10 +43,19 @@ section{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 30px;
   line-height: 60px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+.innledning{
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.container h1{
+  font-size: 30px;
 }
 
 .cards{
@@ -93,7 +116,7 @@ h1{
   section{
     padding: 20px 0px;
   }
-  h1{
+ .container h1{
     font-size: 30px;
     line-height: 40px;
   }
@@ -108,7 +131,7 @@ h1{
     flex: calc(80% - 20px);
     max-width: calc(80% - 20px);
   }
-  h1{
+  .container h1{
     font-size: 20px;
     line-height: 40px;
   }
