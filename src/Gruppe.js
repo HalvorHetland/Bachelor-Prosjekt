@@ -25,7 +25,7 @@ function Gruppe() {
         </div>
         <div className='container'>
             <h1>Gruppemedlemmer</h1>
-            <div className='intromedlemmer'><a>Vi var fem medlemmer som jobbet sammen på et bachelorprosjekt hos Intility AS. 
+            <div className='intromedlemmer'><a>Totalt var vi fem medlemmer som jobbet sammen på et bachelorprosjekt hos Intility AS. 
                 Det har vært en svært positiv opplevelse å samarbeide med disse menneskene, da vi alle var svært dedikerte og engasjerte i å utvikle en stand alone webløsning for dokumentering, kalkulering og fakturering av konsulenttjenester. 
                 Vi har lært mye av hverandre og har hatt en god arbeidsprosess gjennom hele prosjektet.
                 Under finner man alle gruppemedlemmer med navn.
