@@ -6,22 +6,22 @@ import Hallvard from './Img/Hallvard.png';
 import Kristine from './Img/Kristine.png';
 import Logo from './Img/intility_u_byline_hvit_RGB.svg'
 import './Gruppe.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/ListItem';
 import Image from '@mui/material/ImageListItem';
-import {
+/*import {
     useNavigate
-  } from "react-router-dom";
+  } from "react-router-dom";*/
 
 function Gruppe() {
-        const navigate = useNavigate();
+       // const navigate = useNavigate();
     return(
         <>
         <div>
         <div className='logo'><img src={Logo} alt='logo'/></div>
-        <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} className='arrowBack'/>
+       
         </div>
         <div className='container'>
             <h1>Gruppemedlemmer</h1>
@@ -34,7 +34,7 @@ function Gruppe() {
             <Grid container spacing={2} columns={{ xs: 1, sm: 2, md: 12 }} className='grid' justifyContent='center'>
           <Grid item xs={12} sm={6} md={4}>
             <Image className='halvor'><img src={Halvor} alt='halvor' /></Image>
-            <Item><h3>halvor hetland</h3></Item>
+            <Item><h3>Halvor Hetland</h3></Item>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Image className='halvor'><img src={Ada} alt='halvor' /></Image>
@@ -58,4 +58,7 @@ function Gruppe() {
                 </>
     );
 }
+
+// <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} className='arrowBack'/>
+
 export default Gruppe;
