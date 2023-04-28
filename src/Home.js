@@ -38,13 +38,13 @@ function Home() {
       window.location.href = '/Gruppe';
     } 
     else if(type === 'sluttrapportpdf'){
-      alert('Ikke ferdig enda!');
+      alert('Ikke ferdig enda');
     } 
     else if(type === 'forprosjektpdf'){
       window.open(Pdf1);
     } 
     else if(type === 'zip'){
-      alert('Ikke ferdig enda!');
+      alert('Ikke ferdig enda');
     }
   };
 
