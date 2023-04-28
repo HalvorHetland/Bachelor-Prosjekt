@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Pdf1 from './files/Forprosjektrapport.pdf'
 import { Outlet, Link } from "react-router-dom";
+import React from 'react';
 import "./Home.css";
 
 function Home() {
@@ -37,13 +38,13 @@ function Home() {
       window.location.href = '/Gruppe';
     } 
     else if(type === 'sluttrapportpdf'){
-      alert('Ikke ferdig enda');
+      alert('Ikke ferdig enda!');
     } 
     else if(type === 'forprosjektpdf'){
       window.open(Pdf1);
     } 
     else if(type === 'zip'){
-      alert('Ikke ferdig enda');
+      alert('Ikke ferdig enda!');
     }
   };
 
