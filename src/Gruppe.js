@@ -4,16 +4,16 @@ import './Gruppe.css';
 import {
     useNavigate
   } from "react-router-dom";
-  import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+  /*import ArrowBackIcon from '@mui/icons-material/ArrowBack';*/
 function Gruppe() {
-        const navigate = useNavigate();
+        //const navigate = useNavigate();
     return(
         <>
         <div>
             <h1>Gruppemedlemmer</h1>
             </div>
             <div>
-            <ArrowBackIcon onClick={() => navigate(-1)} className='arrowBack' style={{ fontSize: 48 }}/>
+        
         </div>
             <div>
                 <img src={Halvor} alt='halvor'/>
@@ -21,3 +21,5 @@ function Gruppe() {
     );
 }
 export default Gruppe;
+
+//<ArrowBackIcon onClick={() => navigate(-1)} className='arrowBack' style={{ fontSize: 48 }}/>
