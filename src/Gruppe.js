@@ -6,23 +6,24 @@ import Hallvard from './Img/Hallvard.png';
 import Kristine from './Img/Kristine.png';
 import Logo from './Img/intility_u_byline_hvit_RGB.svg'
 import './Gruppe.css';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/ListItem';
 import Image from '@mui/material/ImageListItem';
-/*import {
+import {
     useNavigate
-  } from "react-router-dom";*/
+  } from "react-router-dom";
 
 function Gruppe() {
-       // const navigate = useNavigate();
+        const navigate = useNavigate();
     return(
         <>
         <div>
         <div className='logo'><img src={Logo} alt='logo'/></div>
        
         </div>
+        <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} className='arrowBack'/>
         <div className='container'>
             <h1>Gruppemedlemmer</h1>
             <div className='intromedlemmer'><a>Totalt var vi fem medlemmer som jobbet sammen på et bachelorprosjekt hos Intility AS. 
@@ -58,7 +59,5 @@ function Gruppe() {
                 </>
     );
 }
-
-// <FontAwesomeIcon icon={faArrowLeft} onClick={() => navigate(-1)} className='arrowBack'/>
 
 export default Gruppe;
