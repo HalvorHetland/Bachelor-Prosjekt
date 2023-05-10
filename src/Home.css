@@ -7,11 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
   box-sizing: border-box;
+  align-content: center;
 }
 
 body{
-  background-color: #243242;
+  background-color: #0c1b2d;
   color: white;
+  font-family: 'Open Sans';
+  align-content: center;
 }
 
 .container{
@@ -19,48 +22,114 @@ body{
   width: 100%;
   margin: auto;
   margin-top: 10px;
-  padding: 0px 20px;
+  padding: 0px 0px;
+  align-content: center;
 }
 
-.logo{
- background-color: #0F2033;
-  align-items: center;
+.nav{
+  background-color: #0F2033;
+  align-items: start;
+  align-content: start;
+  text-align: start;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.group{
+  height: 10%;
+  text-decoration: none;
+  font-size: x-large;
+  padding-left: 1%;
+  color: #eaf2fa;
+  margin: 2rem;
+  padding: 10px;
+}
+
+.omOss{
+  height: 10%;
+  text-decoration: none;
+  padding-left: 1%;
+  color: #eaf2fa;
+  margin: 2rem;
+  padding: 10px;
+}
+.omOss:hover{
+  color: #0df2d7;
+}
+.dokumenter{
+  height: 5%;
+  text-decoration: none;
+  padding-left: 1%;
+  color: #eaf2fa;
+  margin-top: 1rem;
+  padding: 10px;
+}
+.dokumenter:hover{
+  color: #0df2d7;
+}
+
+.sektor1{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom: #eaf2fa;
+  padding-bottom: 50px;
   align-content: center;
   text-align: center;
 }
 
-.logo img{
-  width: 20%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.it-logo{
+  display: flex;
+  height: 50%;
+  width: 100%; 
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
 }
-
+.it-logo img{
+  width: 20%;
+  min-width: 170px; 
+}
 section{
+  padding-top: 10px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
-
-.innledning{
+.intro{
   margin-bottom: 80px;
   text-align: center;
+  align-items: center;
 }
-
 .container h1{
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+.sektor2{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom: #eaf2fa;
+  padding-bottom: 50px;
+  align-content: center;
+  text-align: center;
 }
 
 .cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: #243242;
+  border-radius: 4px;
 }
 
 .card{
-  flex: 0 0 calc(50% - 80px);
+  flex: 0 0 calc(27.5% - 80px);
   max-width: calc(50% - 80px);
   width: 100%;
   background: #0F2033;
@@ -68,15 +137,21 @@ section{
   padding: 20px;
   margin-bottom: 80px;
   transition: .3s;
-  border: 2px solid transparent;
+  border: 1px solid #243242;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 7px;
 }
 
 .card:hover{
   border-color: #0DF2D7;
+}
+
+.horizontal-line {
+  border-top: 4px #243242;
+  margin: 10px 1px; /* Adjust margin as needed */
 }
 
 .btn{
@@ -86,13 +161,13 @@ section{
   text-decoration: #0F2033;
   border-radius: 10px;
   max-width: 120px;
-  width: 100%;
+  width: 80%;
   height: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
   margin: auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: .3s;
   border: 1px solid #243242;
@@ -101,30 +176,157 @@ section{
   align-items: center;
 }
 
-
 .btn:hover{
-  background: transparent;
-  color: #243242;
+  background: #9efaef;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.halvor {
+  width: 50%;
+}
+
+.container h3{
+  text-align: center;
+}
+
+.sektor3{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  border-bottom: #eaf2fa;
+  padding-bottom: 50px;
+  align-content: center;
+  text-align: center;
+  display:block;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+ .intromedlemmer{
+  margin-bottom: 80px;
+  text-align: center;
+
+ }
+ .item-container {
+  display: flex;
+  flex-direction: column;
+}
+.group-img{
+  width: 70%;
+  margin: auto;
+}
+
+.item-container h3,
+.item-container p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.bunntekst{
+  padding-top: 20px;
+  align-content: center;
+  padding-left: 5%;
+  margin: auto;
+  text-align: center;
+}
+.om-logo{
+  width: 70px;
+  margin: auto;
 }
 
 @media(max-width: 970px){
   section{
     padding: 20px 0px;
+    align-content: center;
   }
- .container h1{
+  .container h1{
     font-size: 30px;
     line-height: 40px;
   }
-  .card{
-    flex: 0 0 calc(80% - 20px);
-    max-width: calc(80% - 20px);
+  .cards {
+    align-items: center;
+    justify-content: center;
   }
+  .card {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .sektor3{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .group-img{
+    width: 50%;
+    margin: auto;
+  }
+  .group{
+    height: 10%;
+    text-decoration: none;
+    font-size: large;
+    padding-left: 10px;
+    color: #eaf2fa;
+    margin: auto;
+    padding: 10px;
+  }
+
+
+
 }
 
 @media(max-width: 598px){
+  .nav{
+    justify-items: flex-start;
+    width: 100%;
+  }
+  .group{
+    height: 10%;
+    text-decoration: none;
+    padding-left: 10px;
+    color: #eaf2fa;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .omOss{
+    height: 5%;
+    text-decoration: none;
+    color: #eaf2fa;
+    margin: auto;
+    padding: 10px;
+  }
+  .dokumenter{
+    height: 5%;
+    text-decoration: none;
+    padding-left: 1%;
+    color: #eaf2fa;
+    margin: auto;
+    padding: 1px;
+  }
   .card{
-    flex: calc(80% - 20px);
-    max-width: calc(80% - 20px);
+    flex: calc(60% - 20px);
+    max-width: calc(60% - 20px);
+  }
+  .intromedlemmer{
+    width: 80%;
+    margin: auto;
+  }
+  .group-img{
+    width: 50%;
+    margin: auto;
   }
   .container h1{
     font-size: 20px;
