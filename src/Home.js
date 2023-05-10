@@ -47,7 +47,11 @@ function Home() {
   ]);
 
   const handleButtonClick = (type) => {
-    if(type === 'sluttrapportpdf'){
+    if (type === 'page') {
+      // Redirect to a new page
+      window.location.href = '/Gruppe';
+    } 
+    else if(type === 'sluttrapportpdf'){
       alert('Ikke ferdig enda');
     } 
     else if(type === 'forprosjektpdf'){
@@ -62,7 +66,6 @@ function Home() {
   };
 
   return (
-    
     <div>
       <div className='nav'>
         <Navbar>
@@ -112,43 +115,70 @@ function Home() {
         }
         </div>
         </div>
-      
-        <div className='container'>
-            <h1>Gruppemedlemmer</h1>
-            <div className='intromedlemmer'><a>Totalt var vi fem medlemmer som jobbet sammen på et bachelorprosjekt hos Intility AS. 
-                Det har vært en svært positiv opplevelse å samarbeide med disse menneskene, da vi alle var svært dedikerte og engasjerte i å utvikle en stand alone webløsning for dokumentering, kalkulering og fakturering av konsulenttjenester. 
-                Vi har lært mye av hverandre og har hatt en god arbeidsprosess gjennom hele prosjektet.
-                Under finner man alle gruppemedlemmer med navn.
-            </a></div>
-        
-            <Grid container spacing={2} columns={{ xs: 1, sm: 2, md: 12 }} className='grid' justifyContent='center'>
-          <Grid item xs={12} sm={6} md={4}>
-            <Image className='halvor'><img src={Halvor} alt='halvor' /></Image>
-            <Item><h3>Halvor Hetland</h3></Item>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Image className='halvor'><img src={Ada} alt='halvor' /></Image>
-            <Item><h3>Ada Ruud</h3></Item>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Image className='halvor'><img src={Ersan} alt='halvor' /></Image>
-            <Item><h3>Ersan Sinani</h3></Item>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-            <Image className='halvor'><img src={Hallvard} alt='halvor' /></Image>
-            <Item><h3>Hallvard Tjosås Drønen</h3></Item>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-            <Image className='halvor'><img src={Kristine} alt='halvor' /></Image>
-            <Item><h3>Kristine Opsal</h3></Item>
-  </Grid>
-</Grid> 
-                </div>
-                </div>
-                </section>
-    </div>
 
-    
+
+<div className="horizontal-line"></div>
+    <div className='sektor3' id="sektor3">
+     <h1>Gruppemedlemmer</h1>
+                <div className='intromedlemmer'><a>Totalt var vi fem medlemmer som jobbet sammen på et bachelorprosjekt hos Intility AS. 
+                    Det har vært en svært positiv opplevelse å samarbeide med disse menneskene, da vi alle var svært dedikerte og engasjerte i å utvikle en stand alone webløsning for dokumentering, kalkulering og fakturering av konsulenttjenester. 
+                    Vi har lært mye av hverandre og har hatt en god arbeidsprosess gjennom hele prosjektet.
+                    Under finner man alle gruppemedlemmer med navn.
+                </a></div>
+            
+                <Grid container spacing={2} columns={{ xs: 1, sm: 2, md: 12 }} className='grid' justifyContent='center'>
+              <Grid item xs={12} sm={6} md={4}>
+                <Image className='group-img' ><img src={Halvor} alt='halvor' /></Image>
+                <Item className='item-container'>
+                <h3>Halvor Hetland</h3> 
+                <p>Anvendt Datateknologi</p>
+                <p>s346096@oslomet.no</p>
+                </Item>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Image className='group-img'><img src={Ada} alt='ada' /></Image>
+                <Item className='item-container'>
+                <h3>Ada Ruud</h3> 
+                <p>Anvendt Datateknologi</p>
+                <p>s354607@oslomet.no</p>
+                </Item>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Image className='group-img'><img src={Kristine} alt='kristine' /></Image>
+                <Item className='item-container'>
+                <h3>Kristine Opsal</h3> 
+                <p>Anvendt Datateknologi</p>
+                <p>s354527@oslomet.no</p>
+                </Item>
+      </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Image className='group-img'><img src={Ersan} alt='ersan' /></Image>
+                <Item className='item-container'>
+                <h3>Ersan Sinani</h3> 
+                <p>Anvendt Datateknologi</p>
+                <p>s333944@oslomet.no</p>
+                </Item>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+                <Image className='group-img'><img src={Hallvard} alt='hallvard' /></Image>
+                <Item className='item-container'>
+                <h3>Hallvard Tjosås Drønen</h3> 
+                <p>Anvendt Datateknologi</p>
+                <p>s354520@oslomet.no</p>
+                </Item>
+      </Grid>
+    </Grid> 
+
+        </div>
+
+        <div className='bunntekst'>
+        <Image className='om-logo'><img src={Logo2} alt='osloMet logo' /></Image>
+        <h5>© OsloMet Bachelor vår 2023 - Gruppe 20</h5>
+
+        </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
